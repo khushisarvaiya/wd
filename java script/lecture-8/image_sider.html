@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>image_sider</title>
+</head>
+<body>
+      <div>
+      	<img src="b1.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b2.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b3.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b4.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b5.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b6.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b7.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b8.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b9.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b10.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b11.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b12.jpg" width="600px"; height="400px"; class="i1">
+      	<img src="b13.jpg" width="600px"; height="400px"; class="i1">
+      </div>
+</body>
+<script type="text/javascript">
+	counter=0;
+	function slider()
+	{
+	   var ar=document.getElementsByClassName('i1')
+       for(var i=0; i<ar.length; i++)
+       {
+       	ar[i].style.display="none";
+       }
+
+       	if(counter == ar.length)
+       	{
+       		counter=0;
+       	
+       }
+       ar[counter].style.display="block";
+       counter++;
+       setTimeout(slider ,1000)
+
+	}
+	slider();
+
+
+
+</script>
+</html>
