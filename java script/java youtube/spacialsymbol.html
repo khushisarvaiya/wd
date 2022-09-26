@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+   password:
+   <input type="password" placeholder="enter password" id="p1"/>
+   <input type="submit" name="" onclick="test_str()"/>
+</body>
+<script type="text/javascript">
+	function test_str()
+	{
+		var str=document.getElementById('p1').value;
+		if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g)&& str.length >=8) {
+			alert("valid")
+		}
+		else{
+			alert("invalid")
+		}
+	}
+</script>
+</html>
